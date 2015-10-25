@@ -15,4 +15,4 @@ RUN apt-get install -y strace ltrace nmap
 RUN apt-get install -y python3 python3-pip
 RUN pip install setuptools
 RUN git clone https://github.com/ALSchwalm/foresight.git && cd foresight && python3 setup.py install
-
+RUN pip install -I --no-use-wheel capstone
